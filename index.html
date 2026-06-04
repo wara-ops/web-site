@@ -1,654 +1,411 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="Paul Townend" />
-        <title>WARA-Ops</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">Welcome to WARA-Ops</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="https://portal.wara-ops.org">Portal</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#latestNews">News</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projectsReports">Projects and Reports</a></li>                        
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#mailingList">Mailing List</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#aboutWARAOps">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contactUs">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center" style="background-size:cover;">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img src="assets/img/Asset 2.png" alt="..." width="100%" height="100%">
-                <!-- Masthead Heading-->
-              <!-- <h1 class="masthead-heading text-uppercase mb-0">WARA-OPS</h1> -->
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light" style="margin-top:50px; margin-bottom:50px;">
-                    <div class="divider-custom-line"></div>
-                </div>
-				
-								
-				<div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="Workshop-May2025.html" style="margin-right:50px; color:#F3FF00; weight: bold;">CLICK HERE: Workshop on Data-Driven Research for Resilient Infrastructure - Kista Stockholm, May 23, 2025!</a>
-					<br><br><br>
-                </div>
-				
-				
-              <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0"><strong>WARA-Ops is bringing together Swedish industry and academia to solve challenges in data-driven operational research.</strong></p>
-                
-                <p class="masthead-subheading font-weight-light mb-0">We have regular events and workshops, and we provide a portal where data/ models can be stored, annotated, and analysed.
-			
-				</p>
-				
-				
-				
-				
-                <p class="masthead-subheading font-weight-light mb-0" style="margin-top:30px;"><strong>Current data partners include:&nbsp;</strong></p>
-				
-				  <div style="display:flex; flex-wrap: wrap; grid-gap: 50px; margin-top: 50px; align-items: center;">
-					<img src="assets/img/partnerLogos/advenica.png" height="160px" alt="Advenica"/>
-					<img src="assets/img/partnerLogos/ess.png"  height="150px"  alt="ESS"/>
-					<img src="assets/img/partnerLogos/ericsson.png"  height="150px"  alt="Ericsson"/>
-					<img src="assets/img/partnerLogos/intel.png"  height="120px"  alt="Intel"/>
-					<img src="assets/img/partnerLogos/schneider.png"  height="100px"  alt="Schneider Electric"/>
-				  </div>
-				
-				<p>&nbsp;</p>
-				
-              <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://portal.wara-ops.org" style="margin-right:50px; color:#F3FF00;">Click to open WARA-Ops Portal</a>
-                </div>
-            
-            
-            </div>
-            
-           
-            
-        </header>   
-     
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>WARA-Ops - Data-Driven Operational Research</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "tertiary-fixed": "#d5e3fd",
+                "secondary-container": "#fed65b",
+                "on-primary-container": "#7c839b",
+                "inverse-on-surface": "#eff1f3",
+                "surface-container": "#eceef0",
+                "surface-container-highest": "#e0e3e5",
+                "on-secondary-fixed-variant": "#574500",
+                "on-surface": "#191c1e",
+                "secondary-fixed": "#ffe088",
+                "on-tertiary-fixed-variant": "#3a485c",
+                "on-secondary": "#ffffff",
+                "background": "#f7f9fb",
+                "primary-fixed": "#dae2fd",
+                "surface-bright": "#f7f9fb",
+                "on-surface-variant": "#45464d",
+                "surface": "#f7f9fb",
+                "tertiary": "#000000",
+                "primary": "#b1913a",
+                "secondary-fixed-dim": "#e9c349",
+                "primary-fixed-dim": "#bec6e0",
+                "on-error-container": "#93000a",
+                "on-secondary-fixed": "#241a00",
+                "on-primary-fixed-variant": "#3f465c",
+                "tertiary-fixed-dim": "#b9c7e0",
+                "surface-dim": "#d8dadc",
+                "error": "#ba1a1a",
+                "on-primary": "#ffffff",
+                "surface-container-high": "#e6e8ea",
+                "inverse-surface": "#2d3133",
+                "error-container": "#ffdad6",
+                "on-tertiary": "#ffffff",
+                "surface-tint": "#b1913a",
+                "on-tertiary-fixed": "#0d1c2f",
+                "on-background": "#191c1e",
+                "on-secondary-container": "#745c00",
+                "on-primary-fixed": "#ffffff",
+                "on-error": "#ffffff",
+                "inverse-primary": "#bec6e0",
+                "surface-variant": "#e0e3e5",
+                "outline": "#76777d",
+                "outline-variant": "#c6c6cd",
+                "tertiary-container": "#0d1c2f",
+                "secondary": "#735c00",
+                "on-tertiary-container": "#76859b",
+                "primary-container": "#b1913a",
+                "surface-container-low": "#f2f4f6",
+                "surface-container-lowest": "#ffffff",
+                "brand-gold": "#b1913a",
+                "deep-obsidian": "#191c1e"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "margin-mobile": "20px",
+                "unit": "8px",
+                "margin-desktop": "64px",
+                "gutter": "24px",
+                "container-max": "1280px",
+                "stack-lg": "80px",
+                "stack-sm": "24px",
+                "stack-md": "48px"
+        },
+        "fontFamily": {
+                "display-lg": ["Inter"],
+                "body-md": ["Inter"],
+                "title-md": ["Inter"],
+                "headline-lg-mobile": ["Inter"],
+                "body-lg": ["Inter"],
+                "label-md": ["Inter"],
+                "label-sm": ["Inter"],
+                "headline-lg": ["Inter"]
+        },
+        "fontSize": {
+                "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                "title-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+                "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                "label-bold": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }]
+        }
+      },
+    },
+  }
+</script>
+<style>
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
     
-        <!-- Latest News Section-->
-        <section class="page-section text-white mb-0" id="latestNews" style="background-image: none; background-color: #202020">
-            <div class="container">
-                <!-- Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Latest News</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light"  style="margin-top:50px; margin-bottom:50px;">
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                  <!--<div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>-->
-                  
-				
-					
-					 <p class="lead" style="color:#E0FF00"><strong>Workshop on Data-Driven Research for Resilient Infrastructure:  KISTA, Stockholm, MAY 23 2025</strong></p>
-                  <p style="color:#FCDB88">29 April 2025</p>
-                  <p class="lead"><span style="color:#00FF24">On May 23 2025 we will be hosting a one day event on Data-Driven Research for Resilient Infrastructure</span>.  We plan to hold a number of talks from key members of industry and academia, and everyone is welcome (and encouraged) to attend!<br><br>
-					  <span style="font-weight:bold">Please check the workshop website for the agenda and registration: <a href="Workshop-May2025.html">CLICK HERE</a></span> <br><br><br></p> 
-					
-					
-					
-					
-					
-					 <p class="lead" style="color:#E0FF00"><strong>WARA-Ops Seminar Series</strong></p>
-                  <p style="color:#FCDB88">18 March 2025</p>
-                  <p class="lead">We are pleased to announce that we are re-starting the WARA-Ops seminar series!<br><br>Our first seminar of 2025 will take place on Tuesday March 18 at 12:15-12:45, and is being given by <span style="color:#F2ADFF;">Aitor Hernandez Herranz</span> (Ericsson).<br><br>The subject is “<span style="color:#F2ADFF;">Towards co-design for cloud-native enabled scalable robotics in a device-cloud continuum</span>”. 
-					  <br><br>
-					  Please join us! <br> <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTlmNmM0M2EtNDA1OS00NWYxLTlkNzYtYjBjMmM4ZjQ1ZmRj%40thread.v2/0?context=%7b%22Tid%22%3a%225a4ba6f9-f531-4f32-9467-398f19e69de4%22%2c%22Oid%22%3a%22d5eb0796-4d49-45dd-bbd0-af3fa2f51bca%22%7d">Click here to join the meeting on Tuesday 18 March at 12:15 - 12:45.</a>
-					  
-					  <br><br><br></p> 
-					
-					
-					
-				  <p class="lead" style="color:#E0FF00"><strong>WARA-Ops workshop in February 2025!</strong></p>
-                  <p style="color:#FCDB88">10 December 2024</p>
-                  <p class="lead">WARA-Ops are delighted to announce that we are running a <span style="color:#F2ADFF;">second in-person workshop on data-driven operations and research</span>, to be held on 13-14 February 2025. The workshop will take place at ESS in Lund - home to the European Spallation Source particle accelerator!  There will be a mix of networking and talks, combined with a two hour tour of the facility!
-					  <br><br>
-					  Please join us! <br> <a href="Workshop-February2025.html">To see a provisional agenda and to register, please visit our workshop page.</a>
-					  
-					  <br><br><br></p>  
-					
-					
-				  <p class="lead" style="color:#E0FF00"><strong>Student projects (MSc and undergraduate)</strong></p>
-                  <p style="color:#FCDB88">27 September 2024</p>
-                  <p class="lead">Universities are beginning to think about projects for their Masters (and undergradaute) students to– these are typically assignments that span a couple of months and involve researching and solving real problems.
-					  <br><br>
-					  <strong style="color:#F2ADFF">Industry:</strong><br>
-						If your organisation has interest in becoming involved in Masters (or undergraduate) projects, please get in touch. We are happy to help companies connect with academics and students. We can also help to advertise your project idea across the WASP universities; for example, maybe you’d like to involve MSc students to:</p>
-					  
-						<ul style="margin-left:30px; font-size:1.25rem">
-						 <li>Use LLMs to detect anomalies</li>
-						 <li>Explore methods to handle your log data more efficiently</li>
-						 <li>Improve your operational efficiency</li>
-						 <li>Etc.</li>
-						</ul>
-					
-					  <br><br>
-					
-					  <p class="lead">
-					  <strong style="color:#F2ADFF">Faculty:</strong><br>
-					  If you are interested in setting projects involving companies affiliated with WARA-Ops, please also get in touch. We can connect you with the right people! Both: If requested, WARA-Ops is happy to provide the platform on which data can be hosted and/or processed.<br><br>
-					  In all cases, please contact <a href="mailto:paul.townend@umu.se">Paul Townend</a> or <a href="mailto:johan.eker@ericsson.com">Johan Eker</a> for more information!
-					  <br><br><br></p>  
-					
-				  <p class="lead" style="color:#E0FF00"><strong>New WARA-Ops Masters theses published</strong></p>
-                  <p style="color:#FCDB88">12 September 2024</p>
-                  <p class="lead">Two more masters projects that have worked alongside WARA-Ops have been published: "<a href="assets/reports/Leo-Juneblad-thesis.pdf">A Comparative Analysis of Metadata Tools for use on Unknown Operational Datasets</a>" by Leo Juneblad and "<a href="assets/reports/Alban Gashi-thesis.pdf">Analysis and Reduction of Computer Performance Metric Collection for Predictive Analysis</a>" by Alban Gashi! These can be found through the links above or else by browsing our <a href="#projectsReports">Projects and Reports</a> section.<br><br><br></p>  
-					
-				  <p class="lead" style="color:#E0FF00"><strong>WARA-Ops May 2024 Workshop announced!</strong></p>
-                  <p style="color:#FCDB88">25 April 2024</p>
-                  <p class="lead">WARA-Ops is organising a workshop on Data-Driven Research and Operations, to be held at Ericsson in Lund on Friday May 17, 2024. The workshop features a variety of talks by Industry and Academia on research and challenges around data-driven research.</p>  
-					
-				  <p class="lead">Click here for the workshop page and registration: <a href="Workshop-May2024.html">Workshop on Data-Driven Research and Operations</a>.<br><br></p>
-				  <p class="lead">Email <a href="mailto:paul.townend@umu.se">Paul Townend</a> or <a href="mailto:johan.eker@control.lth.se">Johan Eker</a> for more information.
-                  <br><br><br></p>
-					
-				  <p class="lead" style="color:#E0FF00"><strong>New WASP/Vinnova call for funding - projects associated with WARAs</strong></p>
-                  <p style="color:#FCDB88">19 February 2024</p>
-                  <p class="lead">Another new call for funding related to the WARAs (including WARA-Ops) has been launched!  This is funded by WASP Sweden and Vinnova. The call offers funding for collaboration projects between industry and WASP academics, with expected outcomes being “the formulation of questions about future research challenges and plans for continued collaboration”. For more information please see <a href="https://wasp-sweden.org/calls/call-for-research-validation-projects-in-wasp-research-arenas/">the call website.</a> The project should involve one of the WASP research arenas – such as your favourite one, WARA-Ops.  If you come up with a proposal with an industrial partner, we’re happy to work with you to supply a letter of intent – just let us know.  In the case of Ops, you want to be thinking around use of operational data – this could be stream processing, anomaly detection, log analysis, predictive analytics for operational management, etc. Please contact <a href="mailto:paul.townend@umu.se">Paul Townend</a> or <a href="mailto:johan.eker@control.lth.se">Johan Eker</a> for more information.
-                  <br><br><br></p>
-									  
-				  <p class="lead" style="color:#E0FF00"><strong>WASP have announced funded Research Arena PhD studentships</strong></p>
-                  <p style="color:#FCDB88">15 February 2024</p>
-                  <p class="lead">WASP Sweden have launched a <a href="https://wasp-sweden.org/calls/call-for-doctoral-student-positions-connected-to-wasp-research-arenas-2024/">new call for academic and industrial PhD studentships</a> linked to the WASP research arenas. If you have ideas on writing a proposal that involves operational data (including anomaly detection, predictive analysis of time-series data, log file analytics and more) then we encourage you to get in touch. We can help work with you to devise a proposal that has tight integration with WARA-Ops, and supply you with a letter of support. Please contact <a href="mailto:paul.townend@umu.se">Paul Townend</a> or <a href="mailto:johan.eker@control.lth.se">Johan Eker</a> for more information.
-                  <br><br><br></p>
-					
-				  <p class="lead" style="color:#E0FF00"><strong>Intel Sweden to contribute data to WARA-Ops</strong></p>
-                  <p style="color:#FCDB88">2 February 2024</p>
-                  <p class="lead">Intel Sweden and WARA-Ops are pleased to announce that Intel will be contributing data related to predictive modelling and anomaly detection for operational security in advanced computing clusters. We will update the news section of this website when the data is available to WARA-Ops members generally.
-                  <br><br><br></p>
-					
-					
-				  <p class="lead" style="color:#E0FF00"><strong>WARA-Ops at the WASP Winter Conference</strong></p>
-                  <p style="color:#FCDB88">9-11 January 2024</p>
-                  <p class="lead">WARA-Ops officially launched our data portal at the WASP Winter Conference in Norrköping. We currently have datasets available from organisations including Ericsson, Schneider Electric, Advenica, and the ESS - and we are actively engaged in talks with more partners. Any member of a WASP-affiliated University or an organisation interested in sharing their operational data with researchers is welcome to contact us for a user account! To request an account, please visit the "Portal" link at the top of this page and scroll down to "Request account". You can also find the portal by <a href="https://portal.wara-ops.org">clicking here</a>.
-                  <br><br><br></p>
-                  					
-                  <p class="lead" style="color:#E0FF00"><strong>WARA-Ops at the WASP Industry Days Conference</strong></p>
-                  <p style="color:#FCDB88">6-7 November 2023</p>
-                  <p class="lead">WARA-Ops presented the first public showing of its new Data Portal at the WASP Industry Days event in Norrköping. The portal hosts datasets from a number of our partners (including Ericsson, Schneider Electric and ESS) and allows researchers to analyse and process this data through a JupyterHub interface hosted on the Ericsson Research Data Centre (ERDC). We plan to launch the portal in early January 2024!
-                  <br><br><br></p>
-                    
-                    
-                  <p class="lead" style="color:#E0FF00"><strong>SAAB and WARA-Ops Degree Project available!</strong></p>
-                  <p style="color:#FCDB88">8 October 2023</p>
-                  <p class="lead">As we build the WARA-Ops portal (expect our first public demonstration at WASP Industry Days in November), we are pleased to advertise the following project available to students wishing for a project for their 30 credit degree projects:" <br>
-                    <br><a href="https://www.saab.com/career/job-opportunities/examensarbete-30-hp-graph-attention-network-baserad-monitorering-av-komplexa-operationella-system">https://www.saab.com/career/job-opportunities/examensarbete-30-hp-graph-attention-network-baserad-monitorering-av-komplexa-operationella-system</a>
-                      <br>
-                      <br>Please email <a href="mailto:johan.eker@control.lth.se">Johan Eker</a> if you have any questions about this opportunity!
-                  <br><br><br></p>
-                      
-                  <p class="lead" style="color:#E0FF00"><strong>Next (short) lunchtime talk:  Jörgen Malmborg - SCHNEIDER ELECTRIC</strong></p>
-                  <p style="color:#FCDB88">11 April 2023</p>
-                  <p class="lead">The next WARA-Ops lunchtime talk will be at 12:15 on Tuesday 11 April 2023. This will be a short 15 minute talk entitled "Schneider Electric Buildings – Our Data – Simplified Edition", and will be presented by Jörgen Malmborg. The abstract is:<br><br>
-                    "<em>Presentation introduces an HVAC System (plus mentions connections to other technical systems in the building i.e. Fire and Access Control) on an architectural level. We talk about controllers, I/O devices, field buses and supervisory applications. Further we point out some of the challenges with testing such a system and what data is collected during tests. With this background it is fairly easy to imagine where AI/Machine Learning could assist. Finally a short reference to a couple of other data sets that are produced when developing the Building System</em>." <br>
-                    <br>The meeting will take place over Zoom - please email <a href="mailto:paul.townend@umu.se">Paul Townend</a> for the meeting link.  Please also consider joining the WARA-Ops mailing list (see below for details).  See you on Tuesday!
-                  <br><br><br></p>
-                      
-                  <p class="lead" style="color:#E0FF00"><strong>WARA-Ops mailing list created!&nbsp;</strong></p>
-                  <p style="color:#FCDB88">30th March 2023</p>
-                  <p class="lead">WARA-Ops now has a mailing list; this will be a low volume list used to send out meeting announcements, grant opportunities, and updates on WARA-Ops and its associated infrastructure. If you are interested, you can join the list by emailing <a href="mailto:list-join@wara-ops.org">list-join@wara-ops.org</a> and clicking the confirmation link that will be sent to you. To unsubcribe, email <a href="mailto:list-leave@wara-ops.org">list-leave@wara-ops.org</a>. Any messages you send to the list will not be sent out until approved by the list owners.
-                    <br><br><br></p>
-                    
-                  <p class="lead" style="color:#E0FF00"><strong>First WARA-Ops lunchtime meeting announced!&nbsp;</strong></p>
-                  <p style="color:#FCDB88">14th March 2023 - 12:15-12:45 CET</p>
-                  <p class="lead">The first in a series of regular WARA-Ops lunchtime meetings will be held on 14th March 2023 at 12:15-12:45 CET.  We will hear a talk from Johan Tordsson - CEO of Elastisys AB - on a data challenge his company faces. The meeting will be strictly kept to 30 minutes in length, and will also feature updates on WARA-Ops infrastructure. Please contact <a href="mailto:paul.townend@umu.se">Paul Townend</a> for the meeting link, or visit our channel (#wara-ops) on the official WASP Slack.
-                        <br><br><br></p>
-          
-                      
-                  <br><br>
-                  <p class="lead" style="color:#E0FF00"><strong>WARA-OPS LAUNCHED&nbsp;</strong></p>
-                  <p style="color:#FCDB88">9th February 2023</p>
-                  <p class="lead">WARA-Ops was officially launched on 9th Februrary 2023. To see a 45 minute video of the event (consisting of two presentations that introduce and explain WARA-Ops) please <a href="https://play.umu.se/media/t/0_mcin9rpf">CLICK THIS LINK</a>.
-                        <br><br><br></p>
-                    
-                  <br><br>
-                  <p class="lead" style="color:#E0FF00"><strong>WARA-OPS LAUNCH MEETING&nbsp;</strong></p>
-                  <p style="color:#FCDB88">9TH FEBRUARY @ 12:15 - 13:00 CET</p>
-                  <p class="lead">We will be hosting a Zoom meeting to launch WARA-Ops on the 9th Feb 2023!<br><br>The meeting will feature two short presentations: Johan Eker (Ericsson Research and Lund University) will present an overview of what we hope to achieve through the WARA-Ops initiative Paul Townend (Umeå University) will discuss what we are building, how this will be organised, and what members of our community can expect to gain Attending this meeting does not imply any commitment to WARA-Ops.<br>Please contact <a href="mailto:paul.townend@umu.se">Paul Townend</a> for more information
-                        <br><br><br></p>
-                </div>
-          </div>
-            
-        </section>
-        
-        
-        <!-- projects and reports -->
-        
-        <!-- mailing list section -->
-        <section class="page-section text-white mb-0" id="projectsReports" style="background-image: none; background-color: #212B33">
-            <div class="container">
-                <!-- Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Projects and Reports</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light"  style="margin-top:50px; margin-bottom:50px;">
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <!--<div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>-->
-                
-					<br><br>
-					<p class="lead" style="color:#FFFF00"><strong>ARMC3</strong></p>
-					<p class="lead">Tools for Autonomic Resource Management in the Cognitive Continuum: Improve the sustainability and reliability for large-scale systems though data-driven energy and resource management. WARA-Ops will provide both 5G network access as well as compute infrastructure for analytics and data-sharing.&nbsp;</p>
-					<p class="lead" style="color:#FFFF00"><strong>AIR2</strong></p>
-					<p class="lead">AI for Attack Identification, Response and Recovery: The goal of the NEST project AIR2 is to develop resource-efficient systems that can operate with high autonomy even in hostile communication networks. WARA-Ops will provide the computing and network infrastructure for conducting experiments and collection datasets for different kinds of attacks.</p>
-                    <p class="lead" style="color:#FFFF00"><strong>WARA-PS</strong></p>
-					<p class="lead">The WARA-Ops cloud environment (“Xerces”) will continue to host components of the WARA-Ops core system.&nbsp;</p>
-                    <p class="lead" style="color:#ffff00; margin-top:40px;">Masters Projects</p>
-				    <p class="lead"> Tobias Johansson, Ishaaq Khan<br>
-				      Enhancing a Log-analyzer with GraphRAG<br>
-						 <strong style="color:#FFF000">Project with Lund University</strong>, <em style="color:#69FF00">June 2025</em> <br>
-						<a href="https://lup.lub.lu.se/student-papers/search/publication/9208051">Download Report</a></p>
-			      <br><br>
-			      <p class="lead">Victor Ritseson, Christoffer Gyllenstierna <br>
-			        Streamlining Data-Centric ML-Ops in the Integrated Control System at ESS<br>
-					   <strong style="color:#FFF000">Project with Lund University</strong>, <em style="color:#69FF00">June 2025</em> <br>
-					<a href="https://lup.lub.lu.se/student-papers/search/publication/9207340">Download Report</a></p>
-<p class="lead">Anton Risberg:<br>
-					  <span color="FCDB88">Exploring the WARA-Ops 5G dataset for Qos Prediction</span> <br>
-					  <strong style="color:#FFF000">Project with Ericsson</strong>, <em style="color:#69FF00">June 2024</em> <br>
-					  <a href="assets/reports/AntonRisberg-WaraOps-Report.pdf">Download Report</a><br>
-					  <br>
-					  Leo Juneblad:<br>
-  <span color="FCDB88">A Comparative Analysis of Metadata Tools for use on Unknown Operational Datasets</span>, <em style="color:#69FF00">June 2024</em> <br>
-  <strong style="color:#FFF000">Project with Ericsson</strong> <br>
-  <a href="assets/reports/Leo-Juneblad-thesis.pdf">Download Report</a><br>
-  <br>
-					  Alban Gashi:<br>
-  <span color="FCDB88">Analysis and Reduction of Computer Performance Metric Collection for Predictive Analysis</span>, <em style="color:#69FF00">June 2024</em> <br>
-  <strong style="color:#FFF000">Project with Ericsson</strong> <br>
-  <a href="assets/reports/Alban Gashi-thesis.pdf">Download Report</a> <br>
-  <br>
-					  Johan Sundin, Linus Särud:<br>
-  <span color="FCDB88">AI-driven Log Analysis for Intrusion Detection</span>, <em style="color:#69FF00">June 2024</em> <br>
-  <strong style="color:#FFF000">Project with Advenica</strong> <br>
-  <a href="https://lup.lub.lu.se/student-papers/search/publication/9173491">Download Report</a> <br>
-  <br>
-					  Ivar Källander, Stanislaw Swirski:<br>
-  <span color="FCDB88">Graph Attention Network-Based Monitoring of Complex Operational Systems</span>, <em style="color:#69FF00">June 2024</em> <br>
-  <strong style="color:#FFF000">Project with SAAB-Kockums</strong> <br>
-  <a href="https://lup.lub.lu.se/student-papers/search/publication/9174455">Download Report</a> <br>
-  <br>
-					  Gustav Jönemo, Patric Balan:<br>
-  <span color="FCDB88">Predicting Navigational Patterns in Web Applications using Machine Learning Techniques</span>, <em style="color:#69FF00">February 2024</em> <br>
-  <strong style="color:#FFF000">Project with IKEA</strong> <br>
-  <a href="https://lup.lub.lu.se/student-papers/search/publication/9148922">Download Report</a> <br>
-  <br>
-					  Adrian Murphy, Daniel Larsson:<br>
-  <span color="FCDB88">Towards Automated Log Message Embed- dings for Anomaly Detection</span>, <em style="color:#69FF00">January 2024</em> <br>
-  <strong style="color:#FFF000">Project with Advenica</strong> <br>
-  <a href="https://lup.lub.lu.se/student-papers/search/publication/9148775">Download Report</a> <br>
-  <br>
-					  Evelina Danielsson, Lisa Franzén af Klint:<br>
-  <span color="FCDB88">Predicting Loss of Fault Tolerance in a Cloud Graph Database</span>, <em style="color:#69FF00">June 2023</em> <br>
-  <strong style="color:#FFF000">Project with Neo4J</strong> <br>
-  <a href="https://lup.lub.lu.se/student-papers/search/publication/9130724">Download Report</a> <br>
-  <br>
-					  Esaias Belfrage, August Borna:<br>
-  <span color="FCDB88">Generative AI for Synthetic Data</span>, <em style="color:#69FF00">June 2023</em> <br>
-  <strong style="color:#FFF000">Project with Ericsson</strong> <br>
-  <a href="https://lup.lub.lu.se/student-papers/search/publication/9136467">Download Report</a> <br>
-  <br>
-					  David Nilsson, Albin Olsson: <br>
-  <span color="FCDB88">Log Anomaly Detection of Structured Logs in a Distributed Cloud System</span>, <em style="color:#69FF00">June 2022</em> <br>
-  <strong style="color:#FFF000">Project with IKEA</strong> <br>
-  <a href="https://lup.lub.lu.se/student-papers/search/publication/9096767">Download Report</a> <br>
-  <br>
-					  Felicia Segui Andreas Timürtas:<br>
-  <span color="FCDB88">Real-time unsupervised log event anomaly detection in public transportation</span>, <em style="color:#69FF00">June 2022</em> <br>
-  <strong style="color:#FFF000">Project with Gaia</strong> <br>
-  <a href="https://lup.lub.lu.se/student-papers/search/publication/9101077">Download Report</a> <br>
-  <br>
-					  Jacob Gummesson Atroshi, Christian Le:<br>
-  <span color="FCDB88">Automatic Log Based Anomaly Detection in Cloud Operations using Machine Learning</span>, <em style="color:#69FF00">June 2021</em> <br>
-  <strong style="color:#FFF000">Project with Ericsson</strong> <br>
-  <a href="https://lup.lub.lu.se/student-papers/search/publication/9049552">Download Report</a></p>
-                </div>
-                </div>
-            
-        </section>
-        
-        
-        <!-- mailing list section -->
-        <section class="page-section text-white mb-0" id="mailingList" style="background-image: none; background-color: #202020">
-            <div class="container">
-                <!-- Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Mailing List</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light"  style="margin-top:50px; margin-bottom:50px;">
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <!--<div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>-->
-                
-                  <p class="lead">WARA-Ops now has a mailing list; this will be a low volume list used to send out meeting announcements, grant opportunities, and updates on WARA-Ops and its associated infrastructure.
-                      <br><br>
-                      If you are interested, you can join the list by emailing <a href="mailto:list-join@wara-ops.org">list-join@wara-ops.org</a> and clicking the confirmation link that will be sent to you.
-                      <br><br>
-                      To unsubcribe, email <a href="mailto:list-leave@wara-ops.org">list-leave@wara-ops.org</a>.
-                      <br><br>
-                      Any messages you send to the list will not be sent out until approved by the list owners.
-                    <br></p>
-                </div>
-                </div>
-            
-        </section>
-        
-            
+    .shadow-ambient {
+      box-shadow: 0px 4px 30px rgba(0,0,0,0.06);
+    }
     
+    .smooth-scroll {
+      scroll-behavior: smooth;
+    }
     
-          <!-- About Section-->
-        <section class="page-section text-white mb-0" id="aboutWARAOps" style="background-image: none; background-color: #212B33">
-            <div class="container">
-                <!-- Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About WARA-Ops</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light"  style="margin-top:50px; margin-bottom:50px;">
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <!--<div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>-->
-                
-                
-                <p class="lead" style="font-weight: bold;"><a href="https://play.umu.se/media/t/0_mcin9rpf">Watch a video that introduces and explains WARA-Ops by clicking here</a></p>    
-                
-                <p class="lead">Ops is an ambitious research arena that seeks to bring together Swedish industry and academia to solve state-of-the-art challenges in data-driven operational research. It will develop an advanced data storage and processing infrastructure that will enable users to interactively store, annotate, process, and visualize large operational datasets, and - importantly - will provide a collaborative environment that will allow users to interact, share data and results, and set challenges and research questions. Ops aims to actively enable and encourage a significant increase in research collaborations between WASP community members, through a unique national resource.</p>
-    
-                <p class="lead">The initial focus of WARA-Ops will be in two key areas:</p>
+    [x-cloak] { display: none !important; }
+  </style>
+<script defer="" src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-background text-on-background font-body-md smooth-scroll antialiased selection:bg-primary-container selection:text-white" x-data="{ expandedProjects: false, expandedNews: false }">
+<!-- TOP APP BAR -->
+<header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant">
+<div class="max-w-container-max mx-auto w-full h-20 flex justify-between items-center px-margin-mobile md:px-margin-desktop">
+<div class="flex items-center gap-4">
+<a class="font-display-lg text-2xl font-bold text-on-surface flex items-center tracking-tight" href="#">
+        WARA-OPS
+      </a>
+</div>
+<nav class="hidden md:flex space-x-10">
+<a class="text-primary-container border-b-2 border-primary-container pb-1 font-semibold text-2xl transition-all" href="#home">Home</a>
+<a class="text-on-surface-variant font-semibold text-2xl hover:text-primary-container transition-colors duration-200" href="#news">News</a>
+<a class="text-on-surface-variant font-semibold text-2xl hover:text-primary-container transition-colors duration-200" href="#projects">Projects</a>
+<a class="text-on-surface-variant font-semibold text-2xl hover:text-primary-container transition-colors duration-200" href="#mailing-list">Mailing List</a>
+<a class="text-on-surface-variant font-semibold text-2xl hover:text-primary-container transition-colors duration-200" href="#about">About</a>
+<a class="text-on-surface-variant font-semibold text-2xl hover:text-primary-container transition-colors duration-200" href="#contact">Contact</a>
+</nav>
+<div class="flex items-center">
+<a class="hidden md:inline-flex items-center justify-center bg-primary-container text-on-primary font-bold text-lg px-8 py-2 rounded-full hover:brightness-90 transition-all shadow-sm" href="https://portal.wara-ops.org">
+        Portal
+      </a>
+<button class="md:hidden text-on-surface p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div></header>
+<!-- MAIN CANVAS -->
+<main class="pt-24 pb-stack-lg">
+<!-- HERO SECTION -->
+<section class="relative max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg mt-8 flex flex-col items-center text-center" id="home">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-primary-container opacity-[0.03] rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+<div class="mb-stack-sm w-full max-w-4xl rounded-xl overflow-hidden shadow-ambient border border-outline-variant/30">
+<img alt="WARA-Ops Header Banner" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLspqRoErbTEiAfzJ-oNmFqNOMM9kq3aH5mav9lpbC4DEJhENz7PiTasNkdxG6ve0cD1nqW4j7RV_KaWvTJEWkeq5SIydYsqO89NswoNHyu-7K9WPUE_z4MrPUdvvPgh562oHsYsOh7QVAzXP8we_FzbO-ztu-phgLn0tRiR2PcWX1bHxxaEf3ccGfQhRg6LgkRunhbUMJsAq2nUqhipn41x6pScTBu-nVZXvSdWes-6qEAq8TwvxSHRCY4">
+</div>
+<div class="max-w-3xl glass-panel rounded-2xl p-8 md:p-12 shadow-ambient border border-outline-variant mt-stack-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-2 h-full bg-primary-container"></div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-6">
+          Data-Driven Operational Research
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+          WARA-Ops is bringing together Swedish industry and academia to solve challenges in data-driven operational research. We have regular events and workshops, and we provide a portal where data/models can be stored, annotated, and analysed.
+        </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-bold px-8 py-4 rounded-full hover:brightness-90 transition-all w-full sm:w-auto shadow-md" href="https://portal.wara-ops.org">
+            Click to open WARA-Ops Portal
+            <span class="material-symbols-outlined ml-2 text-[18px]">open_in_new</span>
+</a>
+<a class="inline-flex items-center justify-center border-2 border-primary-container text-primary-container font-bold px-8 py-4 rounded-full hover:bg-surface-container transition-colors w-full sm:w-auto" href="Workshop-May2025.html">
+            Workshop - May 23, 2025
+          </a>
+</div>
+</div>
+</section>
+<!-- PARTNERS SECTION -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop border-y border-outline-variant/50 py-stack-md bg-surface-container-lowest/50">
+<div class="text-center mb-8">
+<h2 class="font-label-bold text-label-sm text-on-surface-variant uppercase tracking-[0.2em] font-semibold">Current Data Partners</h2>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-700"><img alt="Ericsson Logo" src="assets/img/partnerLogos/ericsson.png" width="10%"/><img alt="Schneider Electric" src="assets/img/partnerLogos/schneider.png" width="10%"/><img alt="Advenica" src="assets/img/partnerLogos/advenica.png" width="10%"/><img alt="ESS" src="assets/img/partnerLogos/ess.png" width="10%"/><img alt="Intel" src="assets/img/partnerLogos/intel.png" width="10%"/></div>
+</section>
+<!-- LATEST NEWS SECTION -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg" id="news">
+<div class="flex justify-between items-end mb-stack-sm border-b border-outline-variant pb-6">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Latest News</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Featured News Item 1 -->
+<article class="col-span-1 md:col-span-6 bg-surface-container-lowest rounded-xl shadow-ambient border border-outline-variant/30 p-8 flex flex-col justify-between hover:border-primary-container/30 transition-all">
+<div>
+<span class="inline-block px-3 py-1 bg-primary-container/10 text-primary-container font-semibold text-xs uppercase tracking-wider rounded-full mb-4">Event</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Workshop on Data-Driven Research for Resilient Infrastructure: KISTA, Stockholm, MAY 23 2025</h3>
+<p class="font-label-bold text-label-sm text-on-surface-variant mb-4">29 April 2025</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              On May 23 2025 we will be hosting a one day event on Data-Driven Research for Resilient Infrastructure. We plan to hold a number of talks from key members of industry and academia, and everyone is welcome (and encouraged) to attend!
+            </p>
+</div>
+<a class="text-primary-container font-bold hover:underline flex items-center mt-auto" href="Workshop-May2025.html">
+            Register Here <span class="material-symbols-outlined ml-1 text-[16px]">arrow_forward</span>
+</a>
+</article>
+<!-- Featured News Item 2 -->
+<article class="col-span-1 md:col-span-6 bg-surface-container-lowest rounded-xl shadow-ambient border border-outline-variant/30 p-8 flex flex-col justify-between hover:border-primary-container/30 transition-all">
+<div>
+<span class="inline-block px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed-variant font-semibold text-xs uppercase tracking-wider rounded-full mb-4">Seminar</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 leading-tight">WARA-Ops Seminar Series Restart</h3>
+<p class="font-label-bold text-label-sm text-on-surface-variant mb-4">18 March 2025</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Our first seminar of 2025 will take place on Tuesday March 18 at 12:15-12:45, and is being given by Aitor Hernandez Herranz (Ericsson). The subject is "Towards co-design for cloud-native enabled scalable robotics in a device-cloud continuum".
+            </p>
+</div>
+<a class="text-primary-container font-bold hover:underline flex items-center mt-auto" href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTlmNmM0M2EtNDA1OS00NWYxLTlkNzYtYjBjMmM4ZjQ1ZmRj%40thread.v2/0?context=%7b%22Tid%22%3a%225a4ba6f9-f531-4f32-9467-398f19e69de4%22%2c%22Oid%22%3a%22d5eb0796-4d49-45dd-bbd0-af3fa2f51bca%22%7d">
+            Join Meeting <span class="material-symbols-outlined ml-1 text-[16px]">open_in_new</span>
+</a>
+</article>
+<!-- News Grid -->
+<div class="col-span-1 md:col-span-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter mt-8"><article class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 flex flex-col h-full hover:border-primary-container/50 transition-all group"><p class="font-label-bold text-label-sm text-on-surface-variant mb-2">10 December 2024</p><h4 class="font-body-md font-bold text-on-surface mb-3 flex-grow group-hover:text-primary-container transition-colors">WARA-Ops workshop in February 2025!</h4><p class="text-sm text-on-surface-variant mb-4 line-clamp-3">A second in-person workshop on data-driven operations and research at ESS in Lund.</p><a class="text-primary-container font-semibold text-sm hover:underline mt-auto" href="Workshop-February2025.html">Read more</a></article><article class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 flex flex-col h-full hover:border-primary-container/50 transition-all group"><p class="font-label-bold text-label-sm text-on-surface-variant mb-2">27 September 2024</p><h4 class="font-body-md font-bold text-on-surface mb-3 flex-grow group-hover:text-primary-container transition-colors">Student projects (MSc and undergraduate)</h4><p class="text-sm text-on-surface-variant mb-4 line-clamp-3">Connecting industry and academia for Masters and undergraduate project assignments.</p><a class="text-primary-container font-semibold text-sm hover:underline mt-auto" href="#">Read more</a></article><article class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 flex flex-col h-full hover:border-primary-container/50 transition-all group"><p class="font-label-bold text-label-sm text-on-surface-variant mb-2">12 September 2024</p><h4 class="font-body-md font-bold text-on-surface mb-3 flex-grow group-hover:text-primary-container transition-colors">New WARA-Ops Masters theses published</h4><p class="text-sm text-on-surface-variant mb-4 line-clamp-3">Theses by Leo Juneblad and Alban Gashi are now available in the Reports section.</p><a class="text-primary-container font-semibold text-sm hover:underline mt-auto" href="#projects">Browse Reports</a></article><div class="col-span-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter" x-collapse="" x-show="expandedNews" style="display: none;"><article class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 flex flex-col h-full hover:border-primary-container/50 transition-all group"><p class="font-label-bold text-label-sm text-on-surface-variant mb-2">25 April 2024</p><h4 class="font-body-md font-bold text-on-surface mb-3 flex-grow group-hover:text-primary-container transition-colors">WARA-Ops May 2024 Workshop announced!</h4><p class="text-sm text-on-surface-variant mb-4 line-clamp-3">Workshop at Ericsson Lund featuring talks on research and challenges around data-driven operations.</p><a class="text-primary-container font-semibold text-sm hover:underline mt-auto" href="Workshop-May2024.html">View Details</a></article><article class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 flex flex-col h-full hover:border-primary-container/50 transition-all group"><p class="font-label-bold text-label-sm text-on-surface-variant mb-2">19 February 2024</p><h4 class="font-body-md font-bold text-on-surface mb-3 flex-grow group-hover:text-primary-container transition-colors">New WASP/Vinnova call for funding</h4><p class="text-sm text-on-surface-variant mb-4 line-clamp-3">New call for research validation projects in collaboration between industry and WASP academics.</p><a class="text-primary-container font-semibold text-sm hover:underline mt-auto" href="https://wasp-sweden.org/calls/call-for-research-validation-projects-in-wasp-research-arenas/">Visit Call</a></article><article class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 flex flex-col h-full hover:border-primary-container/50 transition-all group"><p class="font-label-bold text-label-sm text-on-surface-variant mb-2">15 February 2024</p><h4 class="font-body-md font-bold text-on-surface mb-3 flex-grow group-hover:text-primary-container transition-colors">WASP Research Arena PhD studentships</h4><p class="text-sm text-on-surface-variant mb-4 line-clamp-3">Call for academic and industrial PhD studentships linked to WASP research arenas.</p><a class="text-primary-container font-semibold text-sm hover:underline mt-auto" href="https://wasp-sweden.org/calls/call-for-doctoral-student-positions-connected-to-wasp-research-arenas-2024/">Learn More</a></article><article class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 flex flex-col h-full hover:border-primary-container/50 transition-all group"><p class="font-label-bold text-label-sm text-on-surface-variant mb-2">2 February 2024</p><h4 class="font-body-md font-bold text-on-surface mb-3 flex-grow group-hover:text-primary-container transition-colors">Intel Sweden to contribute data to WARA-Ops</h4><p class="text-sm text-on-surface-variant mb-4 line-clamp-3">Intel will contribute data related to predictive modelling and anomaly detection.</p><a class="text-primary-container font-semibold text-sm hover:underline mt-auto" href="#">Read more</a></article><article class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 flex flex-col h-full hover:border-primary-container/50 transition-all group"><p class="font-label-bold text-label-sm text-on-surface-variant mb-2">9 January 2024</p><h4 class="font-body-md font-bold text-on-surface mb-3 flex-grow group-hover:text-primary-container transition-colors">WARA-Ops at the WASP Winter Conference</h4><p class="text-sm text-on-surface-variant mb-4 line-clamp-3">Official launch of the data portal at the conference in Norrköping.</p><a class="text-primary-container font-semibold text-sm hover:underline mt-auto" href="https://portal.wara-ops.org">Visit Portal</a></article><article class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 flex flex-col h-full hover:border-primary-container/50 transition-all group"><p class="font-label-bold text-label-sm text-on-surface-variant mb-2">6 November 2023</p><h4 class="font-body-md font-bold text-on-surface mb-3 flex-grow group-hover:text-primary-container transition-colors">WARA-Ops at the WASP Industry Days</h4><p class="text-sm text-on-surface-variant mb-4 line-clamp-3">First public showing of the new Data Portal hosting datasets from Ericsson, Schneider, and ESS.</p><a class="text-primary-container font-semibold text-sm hover:underline mt-auto" href="#">Read more</a></article><article class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 flex flex-col h-full hover:border-primary-container/50 transition-all group"><p class="font-label-bold text-label-sm text-on-surface-variant mb-2">8 October 2023</p><h4 class="font-body-md font-bold text-on-surface mb-3 flex-grow group-hover:text-primary-container transition-colors">SAAB and WARA-Ops Degree Project available!</h4><p class="text-sm text-on-surface-variant mb-4 line-clamp-3">New 30-credit degree project focusing on Graph Attention Networks for system monitoring.</p><a class="text-primary-container font-semibold text-sm hover:underline mt-auto" href="https://www.saab.com/career/job-opportunities/examensarbete-30-hp-graph-attention-network-baserad-monitorering-av-komplexa-operationella-system">View Job</a></article><article class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 flex flex-col h-full hover:border-primary-container/50 transition-all group"><p class="font-label-bold text-label-sm text-on-surface-variant mb-2">11 April 2023</p><h4 class="font-body-md font-bold text-on-surface mb-3 flex-grow group-hover:text-primary-container transition-colors">Lunchtime talk: Jörgen Malmborg</h4><p class="text-sm text-on-surface-variant mb-4 line-clamp-3">Schneider Electric talk on HVAC system data and architectural level overview.</p><a class="text-primary-container font-semibold text-sm hover:underline mt-auto" href="#">Read more</a></article><article class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 flex flex-col h-full hover:border-primary-container/50 transition-all group"><p class="font-label-bold text-label-sm text-on-surface-variant mb-2">30 March 2023</p><h4 class="font-body-md font-bold text-on-surface mb-3 flex-grow group-hover:text-primary-container transition-colors">WARA-Ops mailing list created!</h4><p class="text-sm text-on-surface-variant mb-4 line-clamp-3">Stay updated with meeting announcements and grant opportunities.</p><a class="text-primary-container font-semibold text-sm hover:underline mt-auto" href="#mailing-list">Join List</a></article><article class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 flex flex-col h-full hover:border-primary-container/50 transition-all group"><p class="font-label-bold text-label-sm text-on-surface-variant mb-2">14 March 2023</p><h4 class="font-body-md font-bold text-on-surface mb-3 flex-grow group-hover:text-primary-container transition-colors">First WARA-Ops lunchtime meeting</h4><p class="text-sm text-on-surface-variant mb-4 line-clamp-3">Inaugural series meeting featuring Johan Tordsson, CEO of Elastisys.</p><a class="text-primary-container font-semibold text-sm hover:underline mt-auto" href="#">Read more</a></article><article class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 flex flex-col h-full hover:border-primary-container/50 transition-all group"><p class="font-label-bold text-label-sm text-on-surface-variant mb-2">9 February 2023</p><h4 class="font-body-md font-bold text-on-surface mb-3 flex-grow group-hover:text-primary-container transition-colors">WARA-OPS LAUNCHED</h4><p class="text-sm text-on-surface-variant mb-4 line-clamp-3">The arena officially launched! 45-minute video presentation available now.</p><a class="text-primary-container font-semibold text-sm hover:underline mt-auto" href="https://play.umu.se/media/t/0_mcin9rpf">Watch Video</a></article><article class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-6 flex flex-col h-full hover:border-primary-container/50 transition-all group"><p class="font-label-bold text-label-sm text-on-surface-variant mb-2">9 February 2023</p><h4 class="font-body-md font-bold text-on-surface mb-3 flex-grow group-hover:text-primary-container transition-colors">WARA-OPS LAUNCH MEETING</h4><p class="text-sm text-on-surface-variant mb-4 line-clamp-3">Initial Zoom meeting featuring presentations by Johan Eker and Paul Townend.</p><a class="text-primary-container font-semibold text-sm hover:underline mt-auto" href="#">Read more</a></article></div></div><div class="col-span-full text-center mt-12"><button @click="expandedNews = !expandedNews" class="text-on-surface-variant font-bold hover:text-primary-container transition-colors flex items-center mx-auto text-sm uppercase tracking-widest"><span class="" x-text="expandedNews ? 'Show Fewer News' : 'Show More News'">Show More News</span><span :class="expandedNews ? 'rotate-180' : ''" class="material-symbols-outlined ml-1 transition-transform duration-300">expand_more</span></button></div>
+</div>
+</section>
+<!-- PROJECTS AND REPORTS -->
+<section class="bg-surface-container-low py-stack-lg" id="projects">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm text-center">Projects and Reports</h2>
+<!-- Core Projects Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-stack-lg">
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-ambient border-t-4 border-t-primary-container">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">ARMC3</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+              Tools for Autonomic Resource Management in the Cognitive Continuum: Improve the sustainability and reliability for large-scale systems though data-driven energy and resource management.
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">
+              WARA-Ops will provide both 5G network access as well as compute infrastructure for analytics and data-sharing.
+            </p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-ambient border-t-4 border-t-primary-container">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">AIR2</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+              AI for Attack Identification, Response and Recovery: The goal of the NEST project AIR2 is to develop resource-efficient systems that can operate with high autonomy even in hostile communication networks.
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">
+               WARA-Ops will provide the computing and network infrastructure for conducting experiments and collection datasets for different kinds of attacks.
+            </p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-ambient border-t-4 border-t-outline">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">WARA-PS</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              The WARA-Ops cloud environment (“Xerces”) will continue to host components of the WARA-Ops core system.
+            </p>
+</div>
+</div>
+<!-- Masters Projects List -->
+<div class="max-w-4xl mx-auto">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-6 border-b border-outline-variant pb-4 flex items-center">
+<span class="material-symbols-outlined mr-3 text-primary-container">school</span>
+            Masters Projects
+          </h3>
+<div class="space-y-4">
+<!-- Initial visible projects -->
+<div class="bg-surface-container-lowest rounded-lg p-6 border border-outline-variant flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-primary-container transition-all">
+<div class="flex-1">
+<h4 class="font-body-md font-bold text-on-surface">Enhancing a Log-analyzer with GraphRAG</h4>
+<p class="font-body-sm text-on-surface-variant">Tobias Johansson, Ishaaq Khan</p>
+<div class="flex items-center gap-2 mt-3">
+<span class="text-[10px] font-bold px-2 py-0.5 bg-surface-container text-on-surface-variant rounded uppercase tracking-wider">Lund University</span>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">June 2025</span>
+</div>
+</div>
+<a class="inline-flex items-center text-primary-container font-bold hover:underline whitespace-nowrap" href="#">
+<span class="material-symbols-outlined mr-1 text-[18px]">download</span> Download Report
+              </a>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-6 border border-outline-variant flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-primary-container transition-all">
+<div class="flex-1">
+<h4 class="font-body-md font-bold text-on-surface">Streamlining Data-Centric ML-Ops in the Integrated Control System at ESS</h4>
+<p class="font-body-sm text-on-surface-variant">Victor Ritseson, Christoffer Gyllenstierna</p>
+<div class="flex items-center gap-2 mt-3">
+<span class="text-[10px] font-bold px-2 py-0.5 bg-surface-container text-on-surface-variant rounded uppercase tracking-wider">Lund University</span>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">June 2025</span>
+</div>
+</div>
+<a class="inline-flex items-center text-primary-container font-bold hover:underline whitespace-nowrap" href="#">
+<span class="material-symbols-outlined mr-1 text-[18px]">download</span> Download Report
+              </a>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-6 border border-outline-variant flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-primary-container transition-all">
+<div class="flex-1">
+<h4 class="font-body-md font-bold text-on-surface">Exploring the WARA-Ops 5G dataset for Qos Prediction</h4>
+<p class="font-body-sm text-on-surface-variant">Anton Risberg</p>
+<div class="flex items-center gap-2 mt-3">
+<span class="text-[10px] font-bold px-2 py-0.5 bg-surface-container text-on-surface-variant rounded uppercase tracking-wider">Ericsson</span>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">June 2024</span>
+</div>
+</div>
+<a class="inline-flex items-center text-primary-container font-bold hover:underline whitespace-nowrap" href="#">
+<span class="material-symbols-outlined mr-1 text-[18px]">download</span> Download Report
+              </a>
+</div>
+<!-- Expandable content -->
+<div class="space-y-4 mt-4" style="display: none;" x-collapse="" x-show="expandedProjects"><div class="bg-surface-container-lowest rounded-lg p-6 border border-outline-variant flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-primary-container transition-all"><div class="flex-1"><h4 class="font-body-md font-bold text-on-surface">A Comparative Analysis of Metadata Tools for use on Unknown Operational Datasets</h4><p class="font-body-sm text-on-surface-variant">Leo Juneblad</p><div class="flex items-center gap-2 mt-3"><span class="text-[10px] font-bold px-2 py-0.5 bg-surface-container text-on-surface-variant rounded uppercase tracking-wider">Ericsson</span><span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">June 2024</span></div></div><a class="inline-flex items-center text-primary-container font-bold hover:underline whitespace-nowrap" href="#"><span class="material-symbols-outlined mr-1 text-[18px]">download</span> Download Report</a></div><div class="bg-surface-container-lowest rounded-lg p-6 border border-outline-variant flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-primary-container transition-all"><div class="flex-1"><h4 class="font-body-md font-bold text-on-surface">Analysis and Reduction of Computer Performance Metric Collection for Predictive Analysis</h4><p class="font-body-sm text-on-surface-variant">Alban Gashi</p><div class="flex items-center gap-2 mt-3"><span class="text-[10px] font-bold px-2 py-0.5 bg-surface-container text-on-surface-variant rounded uppercase tracking-wider">Ericsson</span><span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">June 2024</span></div></div><a class="inline-flex items-center text-primary-container font-bold hover:underline whitespace-nowrap" href="#"><span class="material-symbols-outlined mr-1 text-[18px]">download</span> Download Report</a></div><div class="bg-surface-container-lowest rounded-lg p-6 border border-outline-variant flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-primary-container transition-all"><div class="flex-1"><h4 class="font-body-md font-bold text-on-surface">AI-driven Log Analysis for Intrusion Detection</h4><p class="font-body-sm text-on-surface-variant">Johan Sundin, Linus Särud</p><div class="flex items-center gap-2 mt-3"><span class="text-[10px] font-bold px-2 py-0.5 bg-surface-container text-on-surface-variant rounded uppercase tracking-wider">Advenica</span><span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">June 2024</span></div></div><a class="inline-flex items-center text-primary-container font-bold hover:underline whitespace-nowrap" href="#"><span class="material-symbols-outlined mr-1 text-[18px]">download</span> Download Report</a></div><div class="bg-surface-container-lowest rounded-lg p-6 border border-outline-variant flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-primary-container transition-all"><div class="flex-1"><h4 class="font-body-md font-bold text-on-surface">Anomaly Detection in Industrial Control Systems</h4><p class="font-body-sm text-on-surface-variant">Project Archive Item 4</p><div class="flex items-center gap-2 mt-3"><span class="text-[10px] font-bold px-2 py-0.5 bg-surface-container text-on-surface-variant rounded uppercase tracking-wider">Schneider Electric</span><span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">2023</span></div></div><a class="inline-flex items-center text-primary-container font-bold hover:underline whitespace-nowrap" href="#"><span class="material-symbols-outlined mr-1 text-[18px]">download</span> Download Report</a></div><div class="bg-surface-container-lowest rounded-lg p-6 border border-outline-variant flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-primary-container transition-all"><div class="flex-1"><h4 class="font-body-md font-bold text-on-surface">Predictive Maintenance for 5G Infrastructure</h4><p class="font-body-sm text-on-surface-variant">Project Archive Item 5</p><div class="flex items-center gap-2 mt-3"><span class="text-[10px] font-bold px-2 py-0.5 bg-surface-container text-on-surface-variant rounded uppercase tracking-wider">Ericsson</span><span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">2023</span></div></div><a class="inline-flex items-center text-primary-container font-bold hover:underline whitespace-nowrap" href="#"><span class="material-symbols-outlined mr-1 text-[18px]">download</span> Download Report</a></div><div class="bg-surface-container-lowest rounded-lg p-6 border border-outline-variant flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-primary-container transition-all"><div class="flex-1"><h4 class="font-body-md font-bold text-on-surface">Graph-based Monitoring of Complex Systems</h4><p class="font-body-sm text-on-surface-variant">Project Archive Item 6</p><div class="flex items-center gap-2 mt-3"><span class="text-[10px] font-bold px-2 py-0.5 bg-surface-container text-on-surface-variant rounded uppercase tracking-wider">SAAB</span><span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">2023</span></div></div><a class="inline-flex items-center text-primary-container font-bold hover:underline whitespace-nowrap" href="#"><span class="material-symbols-outlined mr-1 text-[18px]">download</span> Download Report</a></div><div class="bg-surface-container-lowest rounded-lg p-6 border border-outline-variant flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-primary-container transition-all"><div class="flex-1"><h4 class="font-body-md font-bold text-on-surface">Resource Management in Edge Computing</h4><p class="font-body-sm text-on-surface-variant">Project Archive Item 7</p><div class="flex items-center gap-2 mt-3"><span class="text-[10px] font-bold px-2 py-0.5 bg-surface-container text-on-surface-variant rounded uppercase tracking-wider">Lund University</span><span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">2023</span></div></div><a class="inline-flex items-center text-primary-container font-bold hover:underline whitespace-nowrap" href="#"><span class="material-symbols-outlined mr-1 text-[18px]">download</span> Download Report</a></div><div class="bg-surface-container-lowest rounded-lg p-6 border border-outline-variant flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-primary-container transition-all"><div class="flex-1"><h4 class="font-body-md font-bold text-on-surface">Security Analysis of Cloud-Native Robotics</h4><p class="font-body-sm text-on-surface-variant">Project Archive Item 8</p><div class="flex items-center gap-2 mt-3"><span class="text-[10px] font-bold px-2 py-0.5 bg-surface-container text-on-surface-variant rounded uppercase tracking-wider">Ericsson</span><span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">2022</span></div></div><a class="inline-flex items-center text-primary-container font-bold hover:underline whitespace-nowrap" href="#"><span class="material-symbols-outlined mr-1 text-[18px]">download</span> Download Report</a></div><div class="bg-surface-container-lowest rounded-lg p-6 border border-outline-variant flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:border-primary-container transition-all"><div class="flex-1"><h4 class="font-body-md font-bold text-on-surface">Data-Driven Energy Optimization in Data Centers</h4><p class="font-body-sm text-on-surface-variant">Project Archive Item 9</p><div class="flex items-center gap-2 mt-3"><span class="text-[10px] font-bold px-2 py-0.5 bg-surface-container text-on-surface-variant rounded uppercase tracking-wider">Umeå University</span><span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">2022</span></div></div><a class="inline-flex items-center text-primary-container font-bold hover:underline whitespace-nowrap" href="#"><span class="material-symbols-outlined mr-1 text-[18px]">download</span> Download Report</a></div></div>
+<div class="text-center mt-8">
+<button @click="expandedProjects = !expandedProjects" class="text-on-surface-variant font-bold hover:text-primary-container transition-colors flex items-center mx-auto text-sm uppercase tracking-widest">
+<span class="" x-text="expandedProjects ? 'Show Fewer Projects' : 'Show More Projects'">Show More Projects</span>
+<span :class="expandedProjects ? 'rotate-180' : ''" class="material-symbols-outlined ml-1 transition-transform duration-300">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT SECTION -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<div class="rounded-2xl overflow-hidden shadow-ambient relative group border border-outline-variant">
+<div class="w-full h-[450px] bg-surface-container flex justify-center items-center" style="background-image: linear-gradient(135deg, #f2f4f6 0%, #e0e3e5 100%);">
+<a class="w-20 h-20 bg-primary-container/90 rounded-full flex justify-center items-center text-white shadow-lg group-hover:scale-110 transition-transform cursor-pointer" href="https://play.umu.se/media/t/0_mcin9rpf">
+<span class="material-symbols-outlined text-[40px] ml-1">play_arrow</span>
+</a>
+</div>
+<p class="absolute bottom-6 left-6 right-6 text-center font-bold text-xs uppercase tracking-widest text-on-surface bg-surface-container-lowest/90 backdrop-blur-sm py-3 rounded-full pointer-events-none shadow-sm">Watch introduction video</p>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8">About WARA-Ops</h2>
+<div class="prose prose-sm md:prose-base text-on-surface-variant max-w-none space-y-6 font-body-md leading-relaxed">
+<p class="">
+              Ops is an ambitious research arena that seeks to bring together Swedish industry and academia to solve state-of-the-art challenges in data-driven operational research. It will develop an advanced data storage and processing infrastructure that will enable users to interactively store, annotate, process, and visualize large operational datasets, and - importantly - will provide a collaborative environment that will allow users to interact, share data and results, and set challenges and research questions.
+            </p>
+<div class="bg-surface-container/30 p-6 rounded-xl border-l-4 border-primary-container">
+<p class="font-bold text-on-surface mb-4">The initial focus of WARA-Ops will be in two key areas:</p>
+<ul class="list-none space-y-4">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary-container mr-3 mt-0.5">check_circle</span>
+<span class=""><strong>Anomaly detection.</strong> We will collect and provide datasets and their associated research challenges, e.g., intrusion detection, denial-of-service attacks, etc. Examples of data include system/software log files.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary-container mr-3 mt-0.5">check_circle</span>
+<span class=""><strong>Autonomous management.</strong> We provide and generate datasets that can be used to drive research into next-generation autonomous management systems that can proactively predict future demand.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MAILING LIST & CONTACT -->
+<section class="bg-primary-container text-on-primary py-stack-lg relative overflow-hidden">
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 0.5px, transparent 0.5px); background-size: 32px 32px;"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<!-- Mailing List -->
+<div class="bg-white/5 backdrop-blur-md rounded-2xl p-10 border border-white/10" id="mailing-list">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-white text-[40px]">mark_email_read</span>
+<h2 class="font-headline-md text-headline-md text-white">Mailing List</h2>
+</div>
+<p class="font-body-md text-white/80 mb-8 leading-relaxed">
+              WARA-Ops now has a mailing list; this will be a low volume list used to send out meeting announcements, grant opportunities, and updates on WARA-Ops and its associated infrastructure.
+            </p>
+<div class="space-y-6">
+<a class="block w-full text-center bg-white text-primary-container font-bold py-4 px-8 rounded-full hover:bg-gray-100 transition-colors shadow-lg" href="mailto:list-join@wara-ops.org">
+                Join Mailing List
+              </a>
+<p class="font-body-sm text-white/60 text-center text-xs">
+                To unsubscribe, email <a class="underline hover:text-white" href="mailto:list-leave@wara-ops.org">list-leave@wara-ops.org</a>
+</p>
+</div>
+</div>
+<!-- Contact -->
+<div class="flex flex-col justify-center" id="contact">
+<h2 class="font-headline-md text-headline-md text-white mb-6">Contact Us</h2>
+<p class="font-body-md text-white/80 mb-10 leading-relaxed max-w-md">
+              If you're interested in getting involved, or just have questions about WARA-Ops, please get in touch!
+            </p>
+<div class="space-y-8 border-l-2 border-white/20 pl-8">
+<div>
+<p class="text-[10px] font-bold text-white/60 uppercase tracking-[0.2em] mb-1">WARA-Ops Co-Manager</p>
+<p class="font-body-lg text-white font-semibold">Paul Townend</p>
+</div>
+<div>
+<p class="text-[10px] font-bold text-white/60 uppercase tracking-[0.2em] mb-1">WARA-Ops Co-Manager</p>
+<p class="font-body-lg text-white font-semibold">Johan Eker</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="w-full py-stack-md px-margin-desktop flex flex-col md:flex-row justify-between items-center bg-on-background border-t border-white/5">
+<div class="flex flex-col items-center md:items-start mb-8 md:mb-0">
+<span class="font-display-lg text-xl font-bold text-white mb-2 tracking-tight">WARA-OPS</span>
+<p class="text-[10px] font-semibold text-white/40 text-center md:text-left uppercase tracking-widest">
+        © 2024 WARA-OPS. Supported by WASP.
+      </p>
+</div>
+<nav class="flex flex-wrap justify-center gap-10">
+<a class="text-[11px] font-bold text-white/60 hover:text-white uppercase tracking-widest transition-colors" href="#">Privacy Policy</a>
+<a class="text-[11px] font-bold text-white/60 hover:text-white uppercase tracking-widest transition-colors" href="#">Terms of Service</a>
+<a class="text-[11px] font-bold text-white/60 hover:text-white uppercase tracking-widest transition-colors" href="#">Research Documentation</a>
+</nav>
+</footer>
 
-                <ul class="lead">
-                    <li style="margin-left:50px;">Anomaly detection. We will collect and provide datasets and their associated research challenges, e.g., intrusion detection, denial-of-service attacks, etc. Examples of data include system/software log files, lists of access requests, etc.</li>
-                    <li style="margin-left:50px; margin-top:10px">Autonomous management. We provide and generate datasets that can be used to drive research into next-generation autonomous management systems that can proactively predict future demand, detect, and react to changes in user/network/hardware behaviour, etc. Examples includes power reduction use metrics that such as CPU/Disk/Network/Memory usage over time, power consumption data.</li>
-                </ul>
-                    
-                <p class="lead">The above research results are applicable across a wide set of application domains, including most online services, communication systems, automation services, energy management, financial and bank systems, online retail, and cloud/edge data centres. The application areas also include software build systems and CI/CD-pipelines. With a strong focus on data storage and cataloging, combined with the provision of a scalable CPUbased environment for interactive data querying, processing, and visualisation, Ops is a natural complement to the Berzelius service (which focuses on GPU-intensive AI/ML workloads). The project is a continuation of WARA-Common - it will be professionally managed by Ericsson Research and significantly extends the current service. Additionally, Ops will include access to a live 5G network and full-scale cloud service, plus access to the monitoring data they generate. In addition to data generated within the Ops arena, the ambition is to also solicit data set through our partner network.</p>
-                <p class="lead">The expected research outputs of Ops are data collection tools (including scalable storage, cataloging, and annotation services), methods for online processing (including auto-scaling resources for interactive data queries, filtering, and visualisation), a collaborative environment to facilitate interaction between researchers and partners (including ability to set research challenges on datasets, allow commenting and communication across researchers, etc.), and ultimately self-learning anomaly detection mechanisms, root cause analysis strategies, and system theory for the control of large-scale systems.
-                </p>
-                
-                </div>
-                </div>
-            
-        </section>
-        
-        
-        <!-- Contact section -->
-        <section class="page-section text-white mb-0" id="contactUs" style="background-image: none; background-color: #202020">
-            <div class="container">
-                <!-- Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Contact Us</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light"  style="margin-top:50px; margin-bottom:50px;">
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <!--<div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>-->
-                
-                    <p class="lead">If you're interested in getting involved, or just have questions about WARA-Ops, please get in touch!
-                    <br><br>
-                    WARA-Ops Co-Manager: <a href="mailto:paul.townend@umu.se">Paul Townend</a><br>
-                    WARA-Ops Co-Manager: <a href="mailto:johan.eker@control.lth.se">Johan Eker</a></p>
-                    <p>&nbsp;</p>
-                    
-                </div>
-                </div>
-            
-        </section>
-        
-            
-        
-        
-        
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    
-                    <!-- Footer Social Icons-->
-                    <div class="mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Find us on Social Media</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    </div>
-                    
-                </div>
-            </div>
-        </footer>
-        
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <img src="assets/img/WASP-Logo.png" alt="WARA-Ops Logo" width="350px">
-            <div class="container"><small>Copyright &copy; WASP Sweden. All rights reserved</small></div>
-        </div>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">WARA-Ops</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
-</html>
+
+</body></html>
